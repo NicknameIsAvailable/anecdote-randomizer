@@ -1,10 +1,9 @@
 import React from 'react';
 import {Card} from "@mui/material";
-import "./AnecdoteField.css"
 
 const AnecdoteField = (props) => {
     return (
-        <Card className="AnecdoteField">
+        <Card style={{padding: "16px", height: "600px"}}>
             <h2>
                 {props.text}
             </h2>

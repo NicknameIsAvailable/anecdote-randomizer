@@ -17,7 +17,7 @@ function App() {
   }
 
   return (
-    <Container className="App">
+    <Container style={{fontFamily: "Roboto, sans-serif"}} className="App">
       <h1>Рандомайзер анекдотов</h1>
         <AnecdoteField text={visibleAnecdote}/>
       <div>
