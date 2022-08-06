@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card} from "@mui/material";
-import css from "./AnecdoteField.css"
+import "./AnecdoteField.css"
 
 const AnecdoteField = (props) => {
     return (
