@@ -25,6 +25,11 @@ function App() {
           setVisibleAnecdote([anecdotes[random]])
         }} className="Button">Новый анекдот</Button>
         <Button  variant="contained" style={{marginTop: "16px", marginRight: "16px"}} onClick={speak} className="button"><VolumeDownIcon/></Button>
+        
+        <Button onClick={() => {
+          visibleAnecdote.select();    
+          document.execCommand("copy");
+        }}>Копировать</Button>
       </div>
 
       {/*<div>*/}
