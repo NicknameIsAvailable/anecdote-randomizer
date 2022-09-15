@@ -24,12 +24,9 @@ function App() {
         <Button  variant="contained" style={{marginTop: "16px", marginRight: "16px"}} onClick={() => {
           setVisibleAnecdote([anecdotes[random]])
         }} className="Button">Новый анекдот</Button>
+        <Button variant="contained" style={{marginTop: "16px", marginRight: "16px"}}
+                onClick={() =>  navigator.clipboard.writeText(visibleAnecdote)}>Копировать</Button>
         <Button  variant="contained" style={{marginTop: "16px", marginRight: "16px"}} onClick={speak} className="button"><VolumeDownIcon/></Button>
-        
-        <Button onClick={() => {
-          visibleAnecdote.select();    
-          document.execCommand("copy");
-        }}>Копировать</Button>
       </div>
 
       {/*<div>*/}
@@ -41,7 +38,7 @@ function App() {
       {/*      />*/}
       {/*</div>*/}
       {/*  <Button  variant="outlined" style={{marginTop: "16px", marginRight: "16px"}} onClick={speak} className="button">Добавить свой анекдот</Button>*/}
-        <h2>Здесь есть {anecdotes.length} анекдотов.</h2>
+        <h2>Количество анекдотов: {anecdotes.length}</h2>
     </Container>
   );
 }
